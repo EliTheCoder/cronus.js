@@ -1,0 +1,20 @@
+{
+	"name": "cronus.js",
+	"version": "1.0.0",
+	"description": "A Node.js library for editing JSON files",
+	"main": "src/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EliTheCoder/cronus.js.git"
+	},
+	"author": "EliTheCoder <elithecoder@elithecoder.com>",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/EliTheCoder/cronus.js/issues"
+	},
+	"homepage": "https://github.com/EliTheCoder/cronus.js#readme",
+	"dependencies": {
+		"fs": "0.0.1-security",
+		"path": "^0.12.7"
+	}
+}
