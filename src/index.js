@@ -6,7 +6,7 @@ class Cronus {
 		if (!file_path) throw new Error("No file path was specified");
 		this.path = file_path;
 		if (!fs.existsSync(path.join(dirname, file_path))) throw new Error("File does not exist");
-		this.data = JSON.parse(fs.readFileSync(path.join(dirname, path)));
+		this.data = JSON.parse(fs.readFileSync(path.join(dirname, file_path)));
 	}
 	save(data = null) {
 		if (data) this.data = data;
