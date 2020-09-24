@@ -10,7 +10,7 @@ class Cronus {
 	}
 	save(data = null) {
 		if (data) this.data = data;
-		fs.writeFileSync(fs.readFileSync(this.path), JSON.stringify(this.data));
+		fs.writeFileSync(this.path, JSON.stringify(this.data));
 	}
 }
 
