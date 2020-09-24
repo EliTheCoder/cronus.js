@@ -5,12 +5,12 @@ class Cronus {
 	constructor(dirname, file_path) {
 		if (!file_path) throw new Error("No file path was specified");
 		this.path = file_path;
-		if (!fs.existsSync(path.join(dirname, file_path))) throw new Error("File does not exist");
-		this.data = JSON.parse(fs.readFileSync(path.join(dirname, file_path)));
+		if (!fs.existsSync(path.join(dirname, this.path))) throw new Error("File does not exist");
+		this.data = JSON.parse(fs.readFileSync(path.join(dirname, this.path)));
 	}
 	save(data = null) {
 		if (data) this.data = data;
-		fs.writeFileSync(fs.readFileSync(path.join(__dirname, path)), JSON.stringify(this.data));
+		fs.writeFileSync(fs.readFileSync(path.join(__dirname, this.path)), JSON.stringify(this.data));
 	}
 }
 
