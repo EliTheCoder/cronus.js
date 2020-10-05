@@ -16,8 +16,5 @@
 	"dependencies": {
 		"fs": "0.0.1-security",
 		"path": "^0.12.7"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
 	}
 }
